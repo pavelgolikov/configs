@@ -1,0 +1,15 @@
+Host m16 						
+	HostName 10.70.20.176   
+	User golikovp		
+	ForwardAgent yes
+
+Host m15
+	HostName 10.70.20.175
+	User golikovp
+	ForwardAgent yes
+
+Host eco12
+	HostName 10.70.40.12
+	User golikovp
+	ForwardAgent yes
+
