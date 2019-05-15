@@ -5,6 +5,7 @@ call plug#end()
 let g:auto_save=1
 autocmd vimenter * NERDTree
 
+set encoding=utf-8
 set number
 set relativenumber
 set tabstop=8 softtabstop=0 expandtab shiftwidth=4 smarttab
