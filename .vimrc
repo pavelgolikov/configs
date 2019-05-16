@@ -3,6 +3,7 @@ Plug 'scrooloose/nerdtree'
 Plug '907th/vim-auto-save'
 call plug#end()
 let g:auto_save=1
+let NERDTreeWinSize=80
 autocmd vimenter * NERDTree
 
 set encoding=utf-8
