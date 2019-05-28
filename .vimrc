@@ -3,7 +3,9 @@ Plug 'scrooloose/nerdtree'
 Plug '907th/vim-auto-save'
 call plug#end()
 let g:auto_save=1
-let NERDTreeWinSize=80
+let NERDTreeWinSize=60
+let NERDTreeShowLineNumbers=1
+autocmd FileType nerdtree setlocal relativenumber
 autocmd vimenter * NERDTree
 
 set encoding=utf-8
