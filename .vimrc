@@ -28,3 +28,4 @@ set autoindent
 syntax on
 nnoremap f /
 set incsearch
+nnoremap <Space> i<Space><Esc>
