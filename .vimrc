@@ -29,3 +29,6 @@ syntax on
 nnoremap f /
 set incsearch
 nnoremap <Space> i<Space><Esc>
+nnoremap <C-j> <Esc>
+inoremap <C-j> <Esc>
+vnoremap <C-j> <Esc>
