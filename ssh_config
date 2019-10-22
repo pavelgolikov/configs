@@ -1,15 +1,11 @@
-Host m16 						
-	HostName 10.70.20.176   
-	User golikovp		
-	ForwardAgent yes
+Host lab
+    User golikovp
+    HostName cs.toronto.edu
 
-Host m15
-	HostName 10.70.20.175
-	User golikovp
-	ForwardAgent yes
+Host ece552
+    User golikovp
+    HostName ug51.eecg.utoronto.ca
 
-Host eco12
-	HostName 10.70.40.12
-	User golikovp
-	ForwardAgent yes
-
+Host vector-vaughan
+    User golikovp
+    HostName vremote1.vectorinstitute.ai
