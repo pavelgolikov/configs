@@ -3,16 +3,16 @@ Plug 'scrooloose/nerdtree'
 Plug '907th/vim-auto-save'
 call plug#end()
 let g:auto_save=1
-let NERDTreeWinSize=80
+let NERDTreeWinSize=40
 let NERDTreeShowLineNumbers=1
 autocmd FileType nerdtree setlocal relativenumber
 autocmd vimenter * NERDTree
 
-"set cursorcolumn
-"hi CursorColumn cterm=NONE ctermbg=DarkGrey
+set cursorcolumn
+hi CursorColumn cterm=underline ctermbg=None
 
 set cursorline
-hi CursorLine cterm=None ctermbg=None
+hi CursorLine cterm=underline ctermbg=None
 
 autocmd InsertEnter * highlight  CursorLine ctermbg=None ctermfg=White
 autocmd InsertLeave * highlight  CursorLine ctermbg=None ctermfg=None
