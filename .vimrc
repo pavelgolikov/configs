@@ -8,14 +8,14 @@ let NERDTreeShowLineNumbers=1
 autocmd FileType nerdtree setlocal relativenumber
 autocmd vimenter * NERDTree
 
-set cursorcolumn
-hi CursorColumn cterm=NONE ctermbg=DarkGrey
+"set cursorcolumn
+"hi CursorColumn cterm=NONE ctermbg=DarkGrey
 
 set cursorline
-hi CursorLine cterm=None ctermbg=DarkGrey 
+hi CursorLine cterm=None ctermbg=None
 
-autocmd InsertEnter * highlight  CursorLine ctermbg=Black ctermfg=White
-autocmd InsertLeave * highlight  CursorLine ctermbg=DarkGrey ctermfg=None
+autocmd InsertEnter * highlight  CursorLine ctermbg=None ctermfg=White
+autocmd InsertLeave * highlight  CursorLine ctermbg=None ctermfg=None
 
 "autocmd InsertEnter * highlight  CursorColumn ctermbg=Black ctermfg=White
 "autocmd InsertLeave * highlight  CursorColumn ctermbg=DarkGrey ctermfg=None
