@@ -9,16 +9,16 @@ autocmd FileType nerdtree setlocal relativenumber
 autocmd vimenter * NERDTree
 
 set cursorcolumn
-hi CursorColumn cterm=underline ctermbg=None
+hi CursorColumn cterm=None ctermbg=DarkGrey
 
 set cursorline
-hi CursorLine cterm=underline ctermbg=None
+hi CursorLine cterm=None ctermbg=DarkGrey
 
-autocmd InsertEnter * highlight  CursorLine ctermbg=None ctermfg=White
-autocmd InsertLeave * highlight  CursorLine ctermbg=None ctermfg=None
+autocmd InsertEnter * highlight  CursorLine ctermbg=DarkGrey ctermfg=White
+autocmd InsertLeave * highlight  CursorLine ctermbg=DarkGrey ctermfg=None
 
-"autocmd InsertEnter * highlight  CursorColumn ctermbg=Black ctermfg=White
-"autocmd InsertLeave * highlight  CursorColumn ctermbg=DarkGrey ctermfg=None
+autocmd InsertEnter * highlight  CursorColumn ctermbg=Black ctermfg=None
+autocmd InsertLeave * highlight  CursorColumn ctermbg=DarkGrey ctermfg=None
 
 set encoding=utf-8
 set number
