@@ -30,6 +30,6 @@ syntax on
 nnoremap f /
 set incsearch
 nnoremap <Space> i<Space><Esc>
-inoremap <C-j> <Esc>
-nnoremap <C-j> <Esc>
-vnoremap <C-j> <Esc>
+inoremap <C-n> <Esc>
+nnoremap <C-n> <Esc>
+vnoremap <C-n> <Esc>
