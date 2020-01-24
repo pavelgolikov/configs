@@ -3,7 +3,7 @@ Plug 'scrooloose/nerdtree'
 Plug '907th/vim-auto-save'
 call plug#end()
 let g:auto_save=1
-let NERDTreeWinSize=40
+let NERDTreeWinSize=60
 let NERDTreeShowLineNumbers=1
 autocmd FileType nerdtree setlocal relativenumber
 autocmd vimenter * NERDTree
@@ -33,3 +33,9 @@ nnoremap <Space> i<Space><Esc>
 inoremap <C-n> <Esc>
 nnoremap <C-n> <Esc>
 vnoremap <C-n> <Esc>
+cnoremap <C-n> <Esc>
+snoremap <C-n> <Esc>
+set laststatus=2
+python3 from powerline.vim import setup as powerline_setup
+python3 powerline_setup()
+python3 del powerline_setup
