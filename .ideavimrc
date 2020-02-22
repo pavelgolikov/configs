@@ -1,0 +1,15 @@
+set encoding=utf-8
+set number
+set relativenumber
+set backspace=2
+set tabstop=8 softtabstop=0 expandtab shiftwidth=4 smarttab
+set autoindent
+syntax on
+nnoremap f /
+set incsearch
+nnoremap <Space> i<Space><Esc>
+inoremap <C-n> <Esc>
+nnoremap <C-n> <Esc>
+vnoremap <C-n> <Esc>
+cnoremap <C-n> <Esc>
+snoremap <C-n> <Esc>
