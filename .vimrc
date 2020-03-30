@@ -30,11 +30,6 @@ syntax on
 nnoremap f /
 set incsearch
 nnoremap <Space> i<Space><Esc>
-inoremap <C-n> <Esc>
-nnoremap <C-n> <Esc>
-vnoremap <C-n> <Esc>
-cnoremap <C-n> <Esc>
-snoremap <C-n> <Esc>
 set laststatus=2
 python3 from powerline.vim import setup as powerline_setup
 python3 powerline_setup()
