@@ -1,6 +1,3 @@
-
-cd /home/pavel
-
 function up {
   num=$1
   while [ $num -ne 0  ];do
@@ -9,9 +6,3 @@ function up {
   done
 }
 
-alias python=python3
-# home/pavel/.local/lib/python3.7/site-packages
-powerline-daemon -q
-POWERLINE_BASH_CONTINUATION=1
-POWERLINE_BASH_SELECT=1
-. ~/.local/lib/python3.7/site-packages/powerline/bindings/bash/powerline.sh
