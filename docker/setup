@@ -1,0 +1,5 @@
+#! /bin/bash
+
+docker build . -t pavel_image
+#docker run --privileged -dit -e DISPLAY=$DISPLAY -v /home/golikovp/:/root --ipc=host --name pavel_container pavel_container
+#docker exec -it pavel_container bash
