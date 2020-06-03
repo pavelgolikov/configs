@@ -36,5 +36,5 @@ set path=$PWD/**
 
 
 " Execute grep recursive grep -> skip ENTER window -> redraw the output -> open the quickfix
-command -nargs=* F silent execute "grep! -r -i <args>" | redraw! | cw
+command -nargs=* F silent execute "grep! -r -i <args>" | redraw! | cope 30
 
