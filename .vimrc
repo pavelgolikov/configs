@@ -20,6 +20,7 @@ autocmd InsertEnter * highlight  CursorLine ctermbg=Black  ctermfg=White
 autocmd InsertLeave * highlight  CursorLine ctermbg=Black ctermfg=None
 
 
+set tw=125
 set encoding=utf-8
 set number
 set relativenumber
@@ -31,3 +32,9 @@ nnoremap f /
 set incsearch
 nnoremap <Space> i<Space><Esc>
 set laststatus=2
+set path=$PWD/**
+
+
+" Execute grep recursive grep -> skip ENTER window -> redraw the output -> open the quickfix
+command -nargs=* F silent execute "grep! -r -i <args>" | redraw! | cw
+
