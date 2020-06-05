@@ -15,6 +15,8 @@ autocmd vimenter * NERDTree
 
 set cursorline
 hi CursorLine cterm=None ctermbg=Black
+hi Visual ctermfg=Black ctermbg=White
+
 
 autocmd InsertEnter * highlight  CursorLine ctermbg=Black  ctermfg=White
 autocmd InsertLeave * highlight  CursorLine ctermbg=Black ctermfg=None
