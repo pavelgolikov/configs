@@ -15,3 +15,4 @@ export PATH=$PATH:/usr/local/NVIDIA-Nsight-Compute-2019.5/
 export TERM=screen-256color
 
 # change terminal background colour to something around 1A1B1F and for xournal to something like 25262A
+# change terminal to solarized and palet 11 to 333E41
