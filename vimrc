@@ -35,6 +35,7 @@ set incsearch
 nnoremap <Space> i<Space><Esc>
 set laststatus=2
 set path=$PWD/**
+set switchbuf+=newtab
 
 
 " Execute grep recursive grep -> skip ENTER window -> redraw the output -> open the quickfix
