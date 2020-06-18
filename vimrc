@@ -22,7 +22,7 @@ autocmd InsertEnter * highlight  CursorLine ctermbg=Black  ctermfg=White
 autocmd InsertLeave * highlight  CursorLine ctermbg=Black ctermfg=None
 
 
-set tw=125
+set tw=80
 set encoding=utf-8
 set number
 set relativenumber
@@ -35,9 +35,25 @@ set incsearch
 nnoremap <Space> i<Space><Esc>
 set laststatus=2
 set path=$PWD/**
-set switchbuf+=newtab
+set switchbuf+=usetab,newtab
+
+" find files and populate the quickfix list
+fun! FindFiles(filename)
+  let error_file = tempname()
+  silent exe '!find . -name "'.a:filename.'" | xargs file | sed "s/:/:1:/" > '.error_file
+  set errorformat=%f:%l:%m
+  exe "cfile ". error_file
+  copen
+  call delete(error_file)
+endfun
+command! -nargs=1 FF call FindFiles(<q-args>) | redraw!
+
+noremap ; l
+noremap l k
+noremap k j
+noremap j h
 
 
-" Execute grep recursive grep -> skip ENTER window -> redraw the output -> open the quickfix
-command -nargs=* F silent execute "grep! -r -i <args>" | redraw! | cope 30
+" Execute grep recursive grep -> skip ENTER window -> redraw the output -> open the location list
+command -nargs=* F silent execute "lgrep! -inr -I <args>" | redraw! | lopen 30
 
