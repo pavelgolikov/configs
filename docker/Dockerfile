@@ -32,3 +32,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends python3.8
 RUN sudo update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.8 20
 RUN sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-8 20
 RUN sudo update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-8 20
+RUN wget https://github.com/Kitware/CMake/releases/download/v3.17.3/cmake-3.17.3-Linux-x86_64.tar.gz && \
+tar -xvzf cmake-3.17.3-Linux-x86_64.tar.gz && rm cmake-3.17.3-Linux-x86_64.tar.gz && mv cmake-3.17.3-Linux-x86_64 /usr/local/ && \
+echo "export PATH=$PATH:/usr/local/cmake-3.17.3-Linux-x86_64/bin" >> /home/${user}/.bashrc
