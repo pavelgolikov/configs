@@ -16,12 +16,15 @@ apt-get install -y --no-install-recommends \
     python-pip \
     tmux \
     wget \
-    curl
+    curl \
+    vim
 
 RUN adduser --home /home/${user} --shell /bin/bash --uid ${userid} --gecos '' --disabled-password ${user}
 RUN adduser ${user} sudo
 RUN echo '%sudo ALL=(ALL) NOPASSWD:ALL' >> /etc/sudoers
 RUN echo "export CUDA_INSTALL_PATH=/usr/local/cuda" >> /home/${user}/.bashrc
+RUN echo "export PATH=$PATH:/usr/local/cuda-10.2/bin" >> /home/${user}/.bashrc
+RUN echo "export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/cuda-10.2/lib" >> /home/${user}/.bashrc
 RUN rm -rf /var/lib/apt/lists/*
 
 RUN sudo add-apt-repository -y ppa:deadsnakes/ppa

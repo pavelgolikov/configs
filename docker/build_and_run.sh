@@ -13,4 +13,4 @@ sudo systemctl restart docker
 docker build . -t ${USER}_cuda_container --build-arg user=$USER --build-arg userid=`id -u`
 
 # run the container
-docker run --privileged --gpus=all -dit -e DISPLAY=$DISPLAY -v /home/$USER:/mnt --ipc=host --name pavel_cuda_container ${USER}_cuda_container  
+docker run --privileged --gpus=all -dit -e DISPLAY=$DISPLAY -v /home/$USER:/mnt --ipc=host --name ${USER}_cuda_container ${USER}_cuda_container  
