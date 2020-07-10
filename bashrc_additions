@@ -13,6 +13,3 @@ export PATH=$PATH:/usr/local/cuda-10.2/bin
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/cuda-10.2/lib64
 export PATH=$PATH:/usr/local/NVIDIA-Nsight-Compute-2019.5/
 export TERM=screen-256color
-
-# change terminal background colour to something around 1A1B1F and for xournal to something like 272D30
-# change terminal to solarized and palet 11 to 333E41
