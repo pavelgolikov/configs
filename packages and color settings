@@ -1,3 +1,5 @@
+Packages:
+
 cmake
 curl
 docker
@@ -22,7 +24,9 @@ vim
 xclip
 zoom
 
-Colour settings:
-Terminal: set background to #17191F, and pallette to Solarized
-Write: set background to #1F2127 and rule color to #003300, 40x40 ruling with 0
-left margin
+Color settings:
+
+Terminal: set background to #18191F, and pallette to Solarized
+
+Write: set background to #2A2D30 and rule color to #003C00, 40x40 ruling with 0
+left margin and 5 smoothing.
