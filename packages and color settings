@@ -28,5 +28,15 @@ Color settings:
 
 Terminal: set background to #18191F, and pallette to Solarized
 
-Write: set background to #2A2D30 and rule color to #003C00, 40x40 ruling with 0
-left margin and 5 smoothing.
+for xournal background use gridsheet generated here with configs:
+background color: #2A2D30
+grid line spacing 4.5 mm
+grid line thickness 0.001 mm
+grid line colour #00600
+major grid 0
+
+http://gridsheet.sourceforge.net/0.2.0/gridweb.html
+
+a copy of this grid is in repo
+
+for xournal config use the config in the repo
