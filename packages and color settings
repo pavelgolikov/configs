@@ -42,4 +42,11 @@ a copy of this grid is in repo
 for xournal config use the config in the repo
 
 for xournal++ use annotate pdf to insert the pdf as background
+xournal++ grid generated from same site with configs:
+background color: #2A2D30
+grid line spacing 4.5 mm
+grid line thickness 0.001 mm
+grid line colour #004100
+major grid 0
+
 
