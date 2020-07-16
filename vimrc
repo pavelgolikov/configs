@@ -52,6 +52,9 @@ noremap ; l
 noremap l k
 noremap k j
 noremap j h
+noremap! <C-BS> <C-w>
+noremap! <C-h> <C-w>
+
 
 
 " Execute grep recursive grep -> skip ENTER window -> redraw the output -> open the location list
