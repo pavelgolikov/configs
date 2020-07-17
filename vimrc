@@ -46,7 +46,7 @@ fun! FindFiles(filename)
   copen
   call delete(error_file)
 endfun
-command! -nargs=1 FF call FindFiles(<q-args>) | redraw!
+command! -nargs=1 -complete=file FF call FindFiles(<q-args>) | redraw!
 
 noremap ; l
 noremap l k
@@ -56,7 +56,6 @@ noremap! <C-BS> <C-w>
 noremap! <C-h> <C-w>
 
 
-
 " Execute grep recursive grep -> skip ENTER window -> redraw the output -> open the location list
-command -nargs=* F silent execute "lgrep! -inr -I <args>" | redraw! | lopen 30
+command -nargs=* -complete=file F silent execute "lgrep! -inr -I <args>" | redraw! | lopen 30
 
