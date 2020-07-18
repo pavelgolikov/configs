@@ -40,13 +40,13 @@ set switchbuf+=usetab,newtab
 " find files and populate the quickfix list
 fun! FindFiles(filename)
   let error_file = tempname()
-  silent exe '!find . -name "'.a:filename.'" | xargs file | sed "s/:/:1:/" > '.error_file
+  silent exe '!find . -name "'.a:filename.*'" | xargs file | sed "s/:/:1:/" > '.error_file
   set errorformat=%f:%l:%m
   exe "cfile ". error_file
   copen
   call delete(error_file)
 endfun
-command! -nargs=1 -complete=file FF call FindFiles(<q-args>) | redraw!
+command! -nargs=1 FF call FindFiles(<q-args>) | redraw!
 
 noremap ; l
 noremap l k
