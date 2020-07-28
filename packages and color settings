@@ -28,11 +28,11 @@ Color settings:
 
 Terminal: set background to #18191F, and pallette to Solarized
 
-for xournal background use gridsheet generated here with configs:
+for xournalpp background use gridsheet generated here with configs:
 background color: #2A2D30
-grid line spacing 4.5 mm
+grid line spacing 6 mm
 grid line thickness 0.001 mm
-grid line colour #00600
+grid line colour #1f4154
 major grid 0
 
 http://gridsheet.sourceforge.net/0.2.0/gridweb.html
@@ -40,13 +40,3 @@ http://gridsheet.sourceforge.net/0.2.0/gridweb.html
 a copy of this grid is in repo
 
 for xournal config use the config in the repo
-
-for xournal++ use annotate pdf to insert the pdf as background
-xournal++ grid generated from same site with configs:
-background color: #2A2D30
-grid line spacing 4.5 mm
-grid line thickness 0.001 mm
-grid line colour #004100
-major grid 0
-
-
