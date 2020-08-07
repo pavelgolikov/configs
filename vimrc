@@ -36,11 +36,12 @@ nnoremap <Space> i<Space><Esc>
 set laststatus=2
 set path=$PWD/**
 set switchbuf+=usetab,newtab
+noremap <C-P> <Nop>
 
 " find files and populate the quickfix list
 fun! FindFiles(filename)
   let error_file = tempname()
-  silent exe '!find . -name "'.a:filename.*'" | xargs file | sed "s/:/:1:/" > '.error_file
+  silent exe '!find . -name "'.a:filename.'" | xargs file | sed "s/:/:1:/" > '.error_file
   set errorformat=%f:%l:%m
   exe "cfile ". error_file
   copen
@@ -52,10 +53,10 @@ noremap ; l
 noremap l k
 noremap k j
 noremap j h
-noremap! <C-BS> <C-w>
-noremap! <C-h> <C-w>
-
+inoremap <C-j> <BS>
 
 " Execute grep recursive grep -> skip ENTER window -> redraw the output -> open the location list
 command -nargs=* -complete=file F silent execute "lgrep! -inr -I <args>" | redraw! | lopen 30
+
+set cpt=.
 
