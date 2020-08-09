@@ -54,9 +54,24 @@ noremap l k
 noremap k j
 noremap j h
 inoremap <C-j> <BS>
+cnoremap <C-j> <BS>
 
 " Execute grep recursive grep -> skip ENTER window -> redraw the output -> open the location list
 command -nargs=* -complete=file F silent execute "lgrep! -inr -I <args>" | redraw! | lopen 30
 
 set cpt=.
 
+
+" MAPPINGS IS DIFFERNET MODES
+" COMMANDS                    MODES ~
+" :map   :noremap  :unmap     Normal, Visual, Select, Operator-pending
+" :nmap  :nnoremap :nunmap    Normal
+" :vmap  :vnoremap :vunmap    Visual and Select
+" :smap  :snoremap :sunmap    Select
+" :xmap  :xnoremap :xunmap    Visual
+" :omap  :onoremap :ounmap    Operator-pending
+" :map!  :noremap! :unmap!    Insert and Command-line
+" :imap  :inoremap :iunmap    Insert
+" :lmap  :lnoremap :lunmap    Insert, Command-line, Lang-Arg
+" :cmap  :cnoremap :cunmap    Command-line
+" :tmap  :tnoremap :tunmap    Terminal-Job
