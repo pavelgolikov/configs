@@ -53,7 +53,6 @@ noremap ; l
 noremap l k
 noremap k j
 noremap j h
-noremap! <C-j> <BS>
 
 " Execute grep recursive grep -> skip ENTER window -> redraw the output -> open the location list
 command -nargs=* -complete=file F silent execute "lgrep! -inr -I <args>" | redraw! | lopen 30
