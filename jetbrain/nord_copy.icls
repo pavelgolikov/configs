@@ -1,9 +1,9 @@
 <scheme name="Nord custom" version="142" parent_scheme="Darcula">
   <metaInfo>
-    <property name="created">2020-03-22T15:45:34</property>
-    <property name="ide">CLion</property>
-    <property name="ideVersion">2019.3.5.0.0</property>
-    <property name="modified">2020-03-22T15:45:42</property>
+    <property name="created">2020-09-02T13:33:39</property>
+    <property name="ide">Python</property>
+    <property name="ideVersion">2020.2.1.0.0</property>
+    <property name="modified">2020-09-02T13:33:50</property>
     <property name="originalScheme">Nord custom</property>
   </metaInfo>
   <colors>
@@ -11,7 +11,7 @@
     <option name="ANNOTATIONS_COLOR" value="d8dee9" />
     <option name="CARET_COLOR" value="d8dee9" />
     <option name="CARET_ROW_COLOR" value="3b4252" />
-    <option name="CONSOLE_BACKGROUND_KEY" value="0" />
+    <option name="CONSOLE_BACKGROUND_KEY" value="2e3440" />
     <option name="DELETED_LINES_COLOR" value="bf616a" />
     <option name="DIAGRAM_ANNOTATION_EDGE" value="d08770" />
     <option name="DIAGRAM_DEFAULT_EDGE" value="d8dee9" />
@@ -58,7 +58,7 @@
     <option name="RIGHT_MARGIN_COLOR" value="4c566a" />
     <option name="SELECTED_INDENT_GUIDE" value="616e88" />
     <option name="SELECTED_TEARLINE_COLOR" value="434c5e" />
-    <option name="SELECTION_BACKGROUND" value="204252" />
+    <option name="SELECTION_BACKGROUND" value="1d2f40" />
     <option name="SEPARATOR_ABOVE_COLOR" value="4c566a" />
     <option name="SEPARATOR_BELOW_COLOR" value="4c566a" />
     <option name="SOFT_WRAP_SIGN_COLOR" value="4c566a" />
@@ -4108,7 +4108,7 @@
     </option>
     <option name="SEARCH_RESULT_ATTRIBUTES">
       <value>
-        <option name="BACKGROUND" value="0" />
+        <option name="BACKGROUND" value="1d2f40" />
       </value>
     </option>
     <option name="SPEL.BACKGROUND">
@@ -4527,13 +4527,13 @@
     <option name="TEXT">
       <value>
         <option name="FOREGROUND" value="d8dee9" />
-        <option name="BACKGROUND" value="0" />
+        <option name="BACKGROUND" value="2e3440" />
         <option name="EFFECT_TYPE" value="5" />
       </value>
     </option>
     <option name="TEXT_SEARCH_RESULT_ATTRIBUTES">
       <value>
-        <option name="BACKGROUND" value="0" />
+        <option name="BACKGROUND" value="1d2f40" />
         <option name="ERROR_STRIPE_COLOR" value="88c0d0" />
       </value>
     </option>
@@ -4866,7 +4866,7 @@
     </option>
     <option name="WRITE_SEARCH_RESULT_ATTRIBUTES">
       <value>
-        <option name="BACKGROUND" value="0" />
+        <option name="BACKGROUND" value="1d2f40" />
       </value>
     </option>
     <option name="WRONG_REFERENCES_ATTRIBUTES">

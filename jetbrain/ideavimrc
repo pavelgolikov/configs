@@ -1,3 +1,13 @@
+set cursorline
+hi CursorLine cterm=None ctermbg=Black
+hi Visual ctermfg=Black ctermbg=White
+
+
+autocmd InsertEnter * highlight  CursorLine ctermbg=Black  ctermfg=White
+autocmd InsertLeave * highlight  CursorLine ctermbg=Black ctermfg=None
+
+
+set tw=80
 set encoding=utf-8
 set number
 set relativenumber
@@ -8,3 +18,27 @@ syntax on
 nnoremap f /
 set incsearch
 nnoremap <Space> i<Space><Esc>
+set laststatus=2
+set path=$PWD/**
+set switchbuf+=usetab,newtab
+noremap <C-P> <Nop>
+set noerrorbells
+
+noremap ; l
+noremap l k
+noremap k j
+noremap j h
+
+" MAPPINGS IS DIFFERNET MODES
+" COMMANDS                    MODES ~
+" :map   :noremap  :unmap     Normal, Visual, Select, Operator-pending
+" :nmap  :nnoremap :nunmap    Normal
+" :vmap  :vnoremap :vunmap    Visual and Select
+" :smap  :snoremap :sunmap    Select
+" :xmap  :xnoremap :xunmap    Visual
+" :omap  :onoremap :ounmap    Operator-pending
+" :map!  :noremap! :unmap!    Insert and Command-line
+" :imap  :inoremap :iunmap    Insert
+" :lmap  :lnoremap :lunmap    Insert, Command-line, Lang-Arg
+" :cmap  :cnoremap :cunmap    Command-line
+" :tmap  :tnoremap :tunmap    Terminal-Job
