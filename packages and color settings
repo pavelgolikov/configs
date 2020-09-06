@@ -28,15 +28,10 @@ Color settings:
 
 Terminal: set background to #18191F, and pallette to Solarized
 
-for xournalpp background use gridsheet generated here with configs:
-background color: #2A2D30
-grid line spacing 6 mm
-grid line thickness 0.001 mm
-grid line colour #1f4154
-major grid 0
+for write3000:
+page color: #3B4045
+rule color: #2D4F63
+x-ruling: 50
+y-ruling: 50
 
-http://gridsheet.sourceforge.net/0.2.0/gridweb.html
-
-a copy of this grid is in repo
-
-for xournal config use the config in the repo
+for jetbrains use colorscheme in the repo
