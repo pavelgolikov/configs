@@ -29,8 +29,8 @@ Color settings:
 Terminal: set background to #18191F, and pallette to Solarized
 
 for write3000:
-page color: #3B4045
-rule color: #2D4F63
+page color: #2A2D30
+rule color: #1F4154
 x-ruling: 50
 y-ruling: 50
 
