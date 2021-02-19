@@ -9,7 +9,4 @@ function up {
 
 cd
 
-export PATH=$PATH:/usr/local/cuda-10.2/bin
-export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/cuda-10.2/lib64
-export PATH=$PATH:/usr/local/NVIDIA-Nsight-Compute-2019.5/
 export TERM=screen-256color
