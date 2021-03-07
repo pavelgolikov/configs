@@ -1,0 +1,6 @@
+In order for ctrl+j to work properly in Ubuntu with Autokey, you need to set the following properties in Gnome Tweaks:
+
+1. Enable Emacs Input
+2. Set Ctrl position as: Caps Lock as Ctrl
+
+DO NOT set Caps Lock behavior. Leave it as disabled.
