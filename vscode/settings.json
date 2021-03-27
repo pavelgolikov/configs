@@ -1,29 +1,16 @@
 {
-    "workbench.colorTheme": "Visual Studio Dark",
+    "window.zoomLevel": 2,
+    "editor.fontSize": 11,
+    "workbench.colorTheme": "Darcula",
+    "editor.cursorStyle": "block",
     "vim.vimrc.enable": true,
-    "editor.codeLens": false,
-    "jupyter.enableCellCodeLens": false,
-    "files.autoSave": "afterDelay",
-    "remote.SSH.remotePlatform": {
-        "me": "linux",
-        "ug75.eecg.toronto.edu": "linux"
-    },
-    "editor.cursorBlinking": "solid",
     "editor.lineNumbers": "relative",
-    "C_Cpp.default.compilerPath": "",
-    "git.suggestSmartCommit": false,
-    "editor.rulers": [
-        120
-    ],
-    "python.pythonPath": "C:\\Users\\pavel-desktop\\AppData\\Local\\Microsoft\\WindowsApps\\python.exe",
-    "workbench.editorAssociations": [],
-    "explorer.confirmDragAndDrop": false,
-    "explorer.confirmDelete": false,
-    "C_Cpp.updateChannel": "Insiders",
-    "editor.fontLigatures": null,
-    "editor.fontWeight": null,
-    "editor.fontFamily": "Hack, 'Courier New', monospace",
-    "editor.fontSize": 13,
-    "terminal.integrated.fontSize": 13,
-    "window.zoomLevel": 1
+    "editor.cursorBlinking": "solid",
+    "vim.cursorStylePerMode.insert": "line",
+    "vim.cursorStylePerMode.replace": "line",
+    "terminal.integrated.fontSize": 11,
+    "terminal.integrated.fontWeight": "100",
+    "workbench.colorCustomizations": {
+        "sideBar.background": "#3b3b3c"
+    }
 }

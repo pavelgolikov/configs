@@ -1,194 +1,45 @@
 // Place your key bindings in this file to override the defaultsauto[]
 [
     {
-        "key": "alt+f4",
-        "command": "workbench.action.closeWindow"
-    },
-    {
-        "key": "ctrl+shift+w",
-        "command": "-workbench.action.closeWindow"
-    },
-    {
-        "key": "alt+w",
-        "command": "workbench.action.closeActiveEditor"
+        "key": "ctrl+w",
+        "command": "-workbench.action.closeWindow",
+        "when": "!editorIsOpen && !multipleEditorGroups"
     },
     {
         "key": "ctrl+w",
         "command": "-workbench.action.closeActiveEditor"
     },
     {
-        "key": "alt+u",
-        "command": "git.pull"
+        "key": "ctrl+w",
+        "command": "extension.vim_ctrl+w",
+        "when": "editorTextFocus && vim.active && vim.use<C-w> && !inDebugRepl"
     },
     {
-        "key": "alt+c",
-        "command": "-toggleFindCaseSensitive",
-        "when": "editorFocus"
-    },
-    {
-        "key": "alt+c",
-        "command": "-toggleSearchEditorCaseSensitive",
-        "when": "inSearchEditor && searchInputBoxFocus"
-    },
-    {
-        "key": "alt+c",
-        "command": "-toggleSearchCaseSensitive",
-        "when": "searchViewletFocus"
-    },
-    {
-        "key": "alt+c",
-        "command": "-workbench.action.terminal.toggleFindCaseSensitive",
-        "when": "terminalFindFocused && terminalProcessSupported || terminalFocus && terminalProcessSupported"
-    },
-    {
-        "key": "alt+c",
-        "command": "git.commit"
-    },
-    {
-        "key": "alt+p",
-        "command": "-keybindings.editor.toggleSortByPrecedence",
-        "when": "inKeybindings"
-    },
-    {
-        "key": "alt+p",
-        "command": "-togglePreserveCase",
-        "when": "editorFocus"
-    },
-    {
-        "key": "alt+p",
-        "command": "-toggleSearchPreserveCase",
-        "when": "searchViewletFocus"
-    },
-    {
-        "key": "alt+p",
-        "command": "git.push"
+        "key": "ctrl+w",
+        "command": "-workbench.action.closeGroup",
+        "when": "activeEditorGroupEmpty && multipleEditorGroups"
     },
     {
         "key": "alt+t",
         "command": "workbench.action.terminal.focus"
     },
     {
-        "key": "ctrl+p",
-        "command": "-workbench.action.quickOpenNavigateNextInFilePicker",
-        "when": "inFilesPicker && inQuickOpen"
+        "key": "ctrl+tab",
+        "command": "workbench.action.terminal.focusNext",
+        "when": "terminalFocus"
     },
     {
-        "key": "ctrl+p",
-        "command": "-extension.vim_ctrl+p",
-        "when": "suggestWidgetVisible && vim.active && vim.use<C-p> && !inDebugRepl || vim.active && vim.use<C-p> && !inDebugRepl && vim.mode == 'CommandlineInProgress' || vim.active && vim.use<C-p> && !inDebugRepl && vim.mode == 'SearchInProgressMode'"
+        "key": "escape",
+        "command": "workbench.action.focusFirstEditorGroup",
+        "when": "!editorTextFocus"
     },
     {
-        "key": "ctrl+p",
-        "command": "-workbench.action.quickOpen"
+        "key": "alt+w",
+        "command": "workbench.action.closeActiveEditor"
     },
     {
-        "key": "ctrl+n",
-        "command": "-workbench.action.files.newUntitledFile"
-    },
-    {
-        "key": "ctrl+n",
-        "command": "-extension.vim_ctrl+n",
-        "when": "editorTextFocus && vim.active && vim.use<C-n> && !inDebugRepl || vim.active && vim.use<C-n> && !inDebugRepl && vim.mode == 'CommandlineInProgress' || vim.active && vim.use<C-n> && !inDebugRepl && vim.mode == 'SearchInProgressMode'"
-    },
-    {
-        "key": "alt+d",
-        "command": "editor.action.revealDefinition",
-        "when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor"
-    },
-    {
-        "key": "f12",
-        "command": "-editor.action.revealDefinition",
-        "when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor"
-    },
-    {
-        "key": "ctrl+f",
-        "command": "-actions.find",
-        "when": "editorFocus || editorIsOpen"
-    },
-    {
-        "key": "ctrl+f",
-        "command": "-editor.action.extensioneditor.showfind",
-        "when": "!editorFocus && activeEditor == 'workbench.editor.extension'"
-    },
-    {
-        "key": "ctrl+f",
-        "command": "-editor.action.webvieweditor.showFind",
-        "when": "!editorFocus && activeEditor == 'WebviewEditor'"
-    },
-    {
-        "key": "alt+f",
-        "command": "workbench.action.terminal.focusFind",
-        "when": "terminalFindFocused && terminalProcessSupported || terminalFocus && terminalProcessSupported"
-    },
-    {
-        "key": "ctrl+f",
-        "command": "-workbench.action.terminal.focusFind",
-        "when": "terminalFindFocused && terminalProcessSupported || terminalFocus && terminalProcessSupported"
-    },
-    {
-        "key": "alt+k",
-        "command": "scrollLineDown",
-        "when": "textInputFocus"
-    },
-    {
-        "key": "alt+i",
-        "command": "editor.action.goToImplementation",
-        "when": "editorHasImplementationProvider && editorTextFocus && !isInEmbeddedEditor"
-    },
-    {
-        "key": "ctrl+f12",
-        "command": "-editor.action.goToImplementation",
-        "when": "editorHasImplementationProvider && editorTextFocus && !isInEmbeddedEditor"
-    },
-    {
-        "key": "shift+u",
-        "command": "references-view.showCallHierarchy",
-        "when": "editorHasCallHierarchyProvider"
-    },
-    {
-        "key": "shift+alt+h",
-        "command": "-references-view.showCallHierarchy",
-        "when": "editorHasCallHierarchyProvider"
-    },
-    {
-        "key": "alt+r",
-        "command": "editor.action.goToReferences",
-        "when": "editorHasReferenceProvider && editorTextFocus && !inReferenceSearchEditor && !isInEmbeddedEditor"
-    },
-    {
-        "key": "shift+f12",
-        "command": "-editor.action.goToReferences",
-        "when": "editorHasReferenceProvider && editorTextFocus && !inReferenceSearchEditor && !isInEmbeddedEditor"
-    },
-    {
-        "key": "l",
-        "command": "list.focusUp",
-        "when": "notebookEditorFocused && !inputFocus && notebookViewType == 'jupyter-notebook'"
-    },
-    {
-        "key": "k",
-        "command": "-list.focusUp",
-        "when": "notebookEditorFocused && !inputFocus && notebookViewType == 'jupyter-notebook'"
-    },
-    {
-        "key": "l",
-        "command": "list.focusUp",
-        "when": "listFocus && !inputFocus"
-    },
-    {
-        "key": "k",
-        "command": "-list.focusUp",
-        "when": "listFocus && !inputFocus"
-    },
-    {
-        "key": "k",
-        "command": "list.focusDown",
-        "when": "notebookEditorFocused && !inputFocus && notebookViewType == 'jupyter-notebook'"
-    },
-    {
-        "key": "j",
-        "command": "-list.focusDown",
-        "when": "notebookEditorFocused && !inputFocus && notebookViewType == 'jupyter-notebook'"
+        "key": "ctrl+tab",
+        "command": "-workbench.action.quickOpenPreviousRecentlyUsedEditorInGroup"
     },
     {
         "key": "k",
@@ -199,24 +50,6 @@
         "key": "j",
         "command": "-list.focusDown",
         "when": "listFocus && !inputFocus"
-    },
-    {
-        "key": ";",
-        "command": "list.expand",
-        "when": "listFocus && !inputFocus"
-    },
-    {
-        "key": "right",
-        "command": "-list.expand",
-        "when": "listFocus && !inputFocus"
-    },
-    {
-        "key": "alt+f",
-        "command": "workbench.action.findInFiles"
-    },
-    {
-        "key": "ctrl+shift+f",
-        "command": "-workbench.action.findInFiles"
     },
     {
         "key": "j",
@@ -229,12 +62,51 @@
         "when": "listFocus && !inputFocus"
     },
     {
-        "key": "left",
-        "command": "-list.collapse",
+        "key": "k",
+        "command": "-list.focusUp",
         "when": "listFocus && !inputFocus"
     },
     {
-        "key": "Escape",
-        "command": "workbench.action.focusFirstEditorGroup"
+        "key": ";",
+        "command": "list.select",
+        "when": "listFocus && !inputFocus"
+    },
+    {
+        "key": "l",
+        "command": "-list.select",
+        "when": "listFocus && !inputFocus"
+    },
+    {
+        "key": "l",
+        "command": "list.focusUp",
+        "when": "listFocus && !inputFocus"
+    },
+    {
+        "key": "ctrl+tab",
+        "command": "workbench.action.nextEditor",
+        "when": "!terminalFocus"
+    },
+    {
+        "key": "ctrl+shift+tab",
+        "command": "workbench.action.previousEditor",
+        "when": "!terminalFocus"
+    },
+    {
+        "key": "ctrl+shift+w",
+        "command": "-workbench.action.closeWindow"
+    },
+    {
+        "key": "ctrl+p",
+        "command": "-extension.vim_ctrl+p",
+        "when": "suggestWidgetVisible && vim.active && vim.use<C-p> && !inDebugRepl || vim.active && vim.use<C-p> && !inDebugRepl && vim.mode == 'CommandlineInProgress' || vim.active && vim.use<C-p> && !inDebugRepl && vim.mode == 'SearchInProgressMode'"
+    },
+    {
+        "key": "ctrl+p",
+        "command": "-workbench.action.quickOpenNavigateNextInFilePicker",
+        "when": "inFilesPicker && inQuickOpen"
+    },
+    {
+        "key": "ctrl+p",
+        "command": "-workbench.action.quickOpen"
     }
 ]
