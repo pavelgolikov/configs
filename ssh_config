@@ -1,7 +1,55 @@
-Host lab
+Host mel-15
     User golikovp
-    HostName cs.toronto.edu
+    HostName 10.70.20.175
 
-Host vector-vaughan
+Host mel-16
     User golikovp
-    HostName vremote1.vectorinstitute.ai
+    HostName 10.70.20.176
+
+Host mel-17
+    User golikovp
+    HostName 10.70.20.177
+
+Host mel-18
+    User golikovp
+    HostName 10.70.20.178
+
+Host eco-11
+    User golikovp
+    HostName 10.70.40.11
+
+Host eco-12
+    User golikovp
+    HostName 10.70.40.12
+
+Host eco-13
+    User golikovp
+    HostName 10.70.40.13
+
+Host eco-14
+    User golikovp
+    HostName 10.70.40.14
+
+Host eco-15
+    User golikovp
+    HostName 10.70.40.15
+
+Host eco-16
+    User golikovp
+    HostName 10.70.40.16
+
+Host eco-17
+    User golikovp
+    HostName 10.70.40.17
+
+Host eco-18
+    User golikovp
+    HostName 10.70.40.18
+
+Host me 
+    User golikovp
+    HostName 10.70.2.98
+
+Host serina
+    User golikovp
+    HostName 10.70.2.126
