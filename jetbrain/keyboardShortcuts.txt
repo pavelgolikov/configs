@@ -1,0 +1,19 @@
+CODE NAVIGATION:							WINDOWS:
+Quick Definition 		Alt-D			    Commit		Alt-0
+Go to Implementation	Alt-I				Project		Alt-1
+Go To Usages:		   	Alt-U				Favourites  Alt-2
+Find in Files:		    Alt-F				Find		Alt-3
+Go to Class			    Alt-C				Run			Alt-4
+											Debug		Alt-5
+TOGGLES:			    					Problems	Alt-6
+Toggle Boomarks		    F12					Git			Alt-9
+Show Bookmarks			Shift-F12
+Toggle Full Screen	   	F11                 Terminal	Alt-T
+
+GIT:
+Pull		 		   	Ctrl-Shift-L
+Push					Ctrl-Shift-P
+Commit:					Ctrl-Shift-C
+
+WINDOWS:
+Close Tab				Ctrl-Shift-W
