@@ -16,4 +16,6 @@ Push					Ctrl-Shift-P
 Commit:					Ctrl-Shift-C
 
 WINDOWS:
-Close Tab				Ctrl-Shift-W
+Close Tab				Alt-W
+Next Tab                Ctrl-Tab
+Previous Tab            Ctrl-Shift-Tab
