@@ -17,5 +17,4 @@ Commit:					Ctrl-Shift-C
 
 WINDOWS:
 Close Tab				Alt-W
-Next Tab                Ctrl-Tab
-Previous Tab            Ctrl-Shift-Tab
+Switcher                Ctrl-Tab
