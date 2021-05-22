@@ -8,7 +8,7 @@ Go to Class		    	Alt-C
 Rename					Alt-R
 
 TOGGLES:
-Toggle Boomarks		    F12
+Toggle Bookmarks	    F12
 Show Bookmarks			Shift-F12
 Toggle Full Screen	   	F11
 
@@ -31,5 +31,6 @@ Run						Alt-4
 Debug					Alt-5
 Problems				Alt-6
 Git						Alt-9
+
 Terminal				Alt-T
 New Terminal 			Ctrl-Shift-Tab
