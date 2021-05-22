@@ -1,20 +1,35 @@
-CODE NAVIGATION:							WINDOWS:
-Quick Definition 		Alt-D			    Commit		Alt-0
-Go to Implementation	Alt-I				Project		Alt-1
-Go To Usages:		   	Alt-U				Favourites  Alt-2
-Find in Files:		    Alt-F				Find		Alt-3
-Go to Class			    Alt-C				Run			Alt-4
-											Debug		Alt-5
-TOGGLES:			    					Problems	Alt-6
-Toggle Boomarks		    F12					Git			Alt-9
+
+CODE NAVIGATION:
+Quick Definition 	    Alt-D
+Go to Implementation	Alt-I
+Go To Usages:		   	Alt-U
+Find in Files:			Alt-F
+Go to Class		    	Alt-C
+Rename					Alt-R
+
+TOGGLES:
+Toggle Boomarks		    F12
 Show Bookmarks			Shift-F12
-Toggle Full Screen	   	F11                 Terminal	Alt-T
+Toggle Full Screen	   	F11
 
 GIT:
-Pull		 		   	Ctrl-Shift-L
+Pull		 			Ctrl-Shift-L
 Push					Ctrl-Shift-P
 Commit:					Ctrl-Shift-C
 
 WINDOWS:
-Close Tab				Alt-W
-Switcher                Ctrl-Tab
+Close Tab			    Alt-W
+Next Tab			    Ctrl-Tab
+Previous Tab			Ctrl-Shift-Tab
+
+WINDOWS:
+Commit					Alt-0
+Project					Alt-1
+Favourites 			    Alt-2
+Find					Alt-3
+Run						Alt-4
+Debug					Alt-5
+Problems				Alt-6
+Git						Alt-9
+Terminal				Alt-T
+New Terminal 			Ctrl-Shift-Tab
