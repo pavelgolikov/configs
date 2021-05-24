@@ -34,7 +34,8 @@ Git						Alt-9
 
 Terminal				Alt-T
 New Terminal 			Ctrl-Shift-Tab
+Messages                Alt-M
 
 RUN:
-Run                     Ctrl-Enter
+Run                     Shift-Enter
 Stop                    Ctrl-Shift-Enter
