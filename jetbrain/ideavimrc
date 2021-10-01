@@ -28,6 +28,8 @@ noremap ; l
 noremap l k
 noremap k j
 noremap j h
+set scrolloff=30
+
 
 " MAPPINGS IS DIFFERNET MODES
 " COMMANDS                    MODES ~
