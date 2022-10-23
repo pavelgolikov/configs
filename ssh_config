@@ -48,7 +48,7 @@ Host eco-18
 
 Host me 
     User golikovp
-    HostName 10.70.2.98
+    HostName 10.70.1.26
 
 Host serina
     User golikovp
