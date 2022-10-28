@@ -16,7 +16,13 @@ apt-get install -y --no-install-recommends \
     python3-pip \
     wget \
     curl \
-    vim
+    vim \
+    clang \
+    llvm \
+    lldb \
+    libnuma-dev \
+    pkg-config
+
 
 RUN useradd -ms /bin/bash -u ${userid} ${user}
 RUN passwd -d $user
