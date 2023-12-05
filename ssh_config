@@ -1,19 +1,4 @@
-Host mel-15
-    User golikovp
-    HostName 10.70.20.175
-
-Host mel-16
-    User golikovp
-    HostName 10.70.20.176
-
-Host mel-17
-    User golikovp
-    HostName 10.70.20.177
-
-Host mel-18
-    User golikovp
-    HostName 10.70.20.178
-
+ForwardX11 yes
 Host eco-11
     User golikovp
     HostName 10.70.40.11
@@ -50,6 +35,28 @@ Host me
     User golikovp
     HostName 10.70.1.26
 
+Host renbo
+    User pavel
+    HostName 10.70.2.148
+
+Host bojian
+    User golikovp
+    HostName 10.70.1.21
+
 Host serina
     User golikovp
     HostName 10.70.2.126
+
+Host kevin
+    User golikovp
+    Hostname 10.70.1.22
+
+Host kevin2
+    User golikovp
+    Hostname 10.70.2.169
+
+Host aws-ec2
+    User ubuntu
+    Hostname ec2-3-12-163-128.us-east-2.compute.amazonaws.com
+    IdentityFile /home/golikovp/iot-query-splitting/python/tool/eval/compute/aws/school_instance.pem
+
