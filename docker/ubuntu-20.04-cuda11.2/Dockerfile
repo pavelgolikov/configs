@@ -17,6 +17,7 @@ apt-get install -y --no-install-recommends \
     curl \
     vim \
     openssh-server \
+    libgl1 \
     pkg-config
 
 

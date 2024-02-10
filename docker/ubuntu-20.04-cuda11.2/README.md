@@ -1,13 +1,16 @@
-# To build the image:
+# Build the image:
 
 ./build.sh <name_of_image>
-<!-- chmod +w . -->
 
-# To run the container from the above image:
+# Create container
 
-docker run -it golikovp-ubuntu-20.04
+./create_cont.sh <container_name>, <image_name>
 
-# To leave container without stopping it:
+# Start container and attach
+
+./start_attach.sh <container_name>
+
+# Leave container without stopping it:
 
 ctrl+p ctrl+q
 
