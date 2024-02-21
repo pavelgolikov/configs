@@ -3,4 +3,4 @@ image_name=$2
 user=$USER
 id=$UID
 
-docker container create -it --user $user:$id -v /home/$user:/home/$user -w /home/$user --name $cont_name $image_name
+docker container create -it --privileged --cap-add=SYS_ADMIN --user $user:$id -v /home/$user:/home/$user -w /home/$user --name $cont_name $image_name
