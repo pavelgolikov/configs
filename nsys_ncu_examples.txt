@@ -1,0 +1,18 @@
+# Proper command for report
+
+nsys profile -w true --force-overwrite true --capture-range=cudaProfilerApi --duration 100 --delay 10 --trace=cuda,cudnn,cublas,nvtx -x true --gpu-metrics-device all -o test_report python 
+
+ncu --config-file off --export llama_2_fp16_summarize --force-overwrite --kernel-name kernel --set roofline --nvtx --nvtx-include forward python ...
+
+nvtx examples:
+# first range
+print("start of nvtx range")
+torch.cuda.cudart().cudaProfilerStart()
+torch.cuda.nvtx.range_push("forward")
+
+torch.cuda.nvtx.range_pop()
+torch.cuda.cudart().cudaProfilerStop()
+print("end of nvtx range")
+exit()
+
+
