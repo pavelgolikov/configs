@@ -4,6 +4,8 @@ nsys profile -w true --force-overwrite true --capture-range=cudaProfilerApi --du
 
 ncu --config-file off --export llama_2_fp16_summarize --force-overwrite --kernel-name kernel --set roofline --nvtx --nvtx-include forward python ...
 
+ncu --config-file off --force-overwrite --set full --nvtx --nvtx-include <name of the range>/ --kernel-name regex:"(^<first kernel>$|^<second kernel>$|^<third kernel>$)" --export output_file_name python ...
+
 nvtx examples:
 # first range
 print("start of nvtx range")
