@@ -1,4 +1,3 @@
-# FROM nvidia/cuda:11.2.2-runtime-ubuntu20.04
 FROM nvidia/cuda:11.4.3-runtime-ubuntu20.04
 ARG user
 ARG userid
