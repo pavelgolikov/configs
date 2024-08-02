@@ -55,8 +55,15 @@ Host kevin2
     User golikovp
     Hostname 10.70.2.169
 
-Host aws-ec2
-    User ubuntu
-    Hostname ec2-3-12-163-128.us-east-2.compute.amazonaws.com
-    IdentityFile /home/golikovp/iot-query-splitting/python/tool/eval/compute/aws/school_instance.pem
+Host yubo
+    User golikovp
+    HostName 10.70.2.95
+
+Host gpumachine
+    User golikovp
+    HostName embarc-gpu.syslab.sandbox
+
+Host vec
+    User golikovp
+    HostName vremote.vectorinstitute.ai
 
