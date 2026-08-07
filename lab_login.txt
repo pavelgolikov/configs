@@ -1,2 +1,0 @@
-ssh golikovp@cs.toronto.edu
-ssh golikovp@10.70.1.26
