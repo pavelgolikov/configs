@@ -1,0 +1,13 @@
+{
+  "model": "opus",
+  "modelSettings": {
+    "claude-opus-5-5": {
+      "effortLevel": "xhigh"
+    }
+  },
+  "env": {
+    "PYTHONDONTWRITEBYTECODE": "1"
+  },
+  "autoMemoryEnabled": false,
+  "autoDreamEnabled": false
+}
