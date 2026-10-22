@@ -5,8 +5,8 @@
 #
 # HOW TO USE
 #   1. Copy this whole neovim_setup directory to the machine.
-#   2. If curl, git, or npm are missing, install them first:
-#        sudo apt install curl git nodejs npm
+#   2. If curl or git are missing, install them first:
+#        sudo apt install curl git
 #   3. Run:  bash neovim_setup/install.sh
 #   4. If `nvim` is not found afterwards, open a new terminal (Ubuntu adds
 #      ~/.local/bin to PATH at login once that directory exists).
@@ -14,7 +14,9 @@
 #
 # WHAT IT DOES (nothing needs sudo; everything goes into your home directory)
 #   - Installs Neovim v0.12.6 into ~/.local/opt and links it as ~/.local/bin/nvim.
-#   - Installs pyright with npm into ~/.local (~/.local/bin/pyright-langserver).
+#   - Installs Node.js v24.22.1 (which includes npm) into ~/.local/opt and links
+#     it as ~/.local/bin/node. Pyright is written in JavaScript and runs on it.
+#   - Installs pyright with that npm into ~/.local (~/.local/bin/pyright-langserver).
 #   - Copies nvim/ (init.lua and the plugin lockfile) to ~/.config/nvim.
 #   - Starts Neovim once without a window so it downloads the plugins.
 #
@@ -39,7 +41,12 @@ mkdir -p ~/.local/opt ~/.local/bin
 curl -fL https://github.com/neovim/neovim/releases/download/v0.12.6/nvim-linux-x86_64.tar.gz | tar -xz -C ~/.local/opt
 ln -sf ~/.local/opt/nvim-linux-x86_64/bin/nvim ~/.local/bin/nvim
 
-npm install -g --prefix ~/.local pyright
+curl -fL https://nodejs.org/dist/v24.22.1/node-v24.22.1-linux-x64.tar.gz | tar -xz -C ~/.local/opt
+ln -sf ~/.local/opt/node-v24.22.1-linux-x64/bin/node ~/.local/bin/node
+
+# npm finds node through PATH, and ~/.local/bin may not be on PATH until the next login.
+export PATH="$HOME/.local/bin:$PATH"
+~/.local/opt/node-v24.22.1-linux-x64/bin/npm install -g --prefix ~/.local pyright
 
 mkdir -p ~/.config/nvim
 cp -rT nvim ~/.config/nvim

@@ -27,7 +27,7 @@ vim.opt.expandtab = true
 vim.opt.shiftwidth = 4
 vim.opt.cursorline = true
 vim.opt.scrolloff = 35
-vim.opt.path = vim.env.PWD .. '/**'
+vim.opt.path = vim.fn.getcwd() .. '/**'
 vim.opt.switchbuf:append({ 'usetab', 'newtab' })
 vim.opt.complete = '.'
 
