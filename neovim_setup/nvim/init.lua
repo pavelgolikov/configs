@@ -77,7 +77,7 @@ command -nargs=* -complete=file F silent execute "lgrep! -inr -I <args>" | redra
 -- File explorer, set up like the NERDTree settings in ~/.vimrc. Icons are
 -- plain characters because the terminal font is not a Nerd Font.
 require('nvim-tree').setup({
-  view = { width = 60, number = true, relativenumber = true },
+  view = { width = 52, number = true, relativenumber = true },
   renderer = {
     icons = {
       show = { file = false, folder = false, git = false },
