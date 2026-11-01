@@ -1,13 +1,40 @@
 {
-  "model": "opus",
-  "modelSettings": {
-    "claude-opus-5-5": {
-      "effortLevel": "xhigh"
-    }
-  },
   "env": {
     "PYTHONDONTWRITEBYTECODE": "1"
   },
+  "model": "opus",
+  "feedbackDrafts": "off",
+  "modelSettings": {
+    "claude-opus-5-5": {
+      "effortLevel": "xhigh",
+      "autoCompactWindow": "auto"
+    }
+  },
   "autoMemoryEnabled": false,
-  "autoDreamEnabled": false
+  "autoDreamEnabled": false,
+  "theme": "dark",
+  "editorMode": "normal",
+  "switchModelsOnFlag": false,
+  "remoteControlAtStartup": true,
+  "inputNeededNotifEnabled": true,
+  "agentPushNotifEnabled": true,
+  "worktree": {
+    "bgIsolation": "none"
+  },
+  "permissions": {
+    "defaultMode": "auto"
+  },
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Edit|Write",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "jq -r '(.tool_input.new_string // .tool_input.content // \"\") | split(\"\\n\") | .[] | select(length > 120) | \"\\(length) chars: \\(.[0:100])...\"' | awk '{ print; n++ } END { if (n) { print n \" line(s) you just wrote exceed 120 characters. Rewrap them unless a line is one unbreakable token such as a URL.\"; exit 2 } }' >&2"
+          }
+        ]
+      }
+    ]
+  }
 }
