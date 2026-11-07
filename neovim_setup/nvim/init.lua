@@ -18,7 +18,7 @@ vim.pack.add({
 }, { confirm = false })
 
 -- Options from ~/.vimrc (the ones that are already Neovim defaults are left out)
-vim.opt.textwidth = 80
+vim.opt.textwidth = 120
 vim.opt.number = true
 vim.opt.relativenumber = true
 vim.opt.tabstop = 8

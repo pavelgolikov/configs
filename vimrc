@@ -22,7 +22,7 @@ autocmd InsertEnter * highlight  CursorLine ctermbg=235  ctermfg=White
 autocmd InsertLeave * highlight  CursorLine ctermbg=235  ctermfg=None
 
 
-set tw=80
+set tw=120
 set encoding=utf-8
 set number
 set relativenumber
