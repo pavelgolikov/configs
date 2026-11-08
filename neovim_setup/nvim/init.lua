@@ -78,6 +78,8 @@ command -nargs=* -complete=file F silent execute "lgrep! -inr -I <args>" | redra
 -- plain characters because the terminal font is not a Nerd Font.
 require('nvim-tree').setup({
   view = { width = 45, number = true, relativenumber = true },
+  -- Show every file, including the ones that .gitignore lists and dotfiles.
+  filters = { git_ignored = false, dotfiles = false },
   renderer = {
     icons = {
       show = { file = false, folder = false, git = false },
