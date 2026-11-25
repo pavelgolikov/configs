@@ -30,6 +30,8 @@ vim.opt.scrolloff = 35
 vim.opt.path = vim.fn.getcwd() .. '/**'
 vim.opt.switchbuf:append({ 'usetab', 'newtab' })
 vim.opt.complete = '.'
+-- Searching with / and ? ignores the case of letters.
+vim.opt.ignorecase = true
 
 vim.cmd.colorscheme('sonokai')
 
